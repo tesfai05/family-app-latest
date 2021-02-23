@@ -116,15 +116,12 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.9.2</version>
 		</dependency>
-		
-		
+
 		<dependency>
 			<groupId>commons-beanutils</groupId>
 			<artifactId>commons-beanutils</artifactId>
 			<version>1.9.4</version>
 		</dependency>
-
-
 
 	</dependencies>
 
@@ -140,19 +137,18 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
-					<source>1.8</source>
-					<target>1.8</target>
 				</configuration>
 			</plugin>
 
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-surefire-plugin</artifactId>
-				<version>3.0.0-M5</version>
-				<configuration>
-					<skipTests>${skipTests}</skipTests>
-				</configuration>
-			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>org.springframework.boot</groupId>-->
+<!--				<artifactId>spring-boot-surefire-plugin</artifactId>-->
+<!--				<version>4.0.0</version>-->
+<!--				<configuration>-->
+<!--					&lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--					<skipTests>${skipTests}</skipTests>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
 		</plugins>
 		<finalName>family-app</finalName>
 	</build>
